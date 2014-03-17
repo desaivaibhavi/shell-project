@@ -1,0 +1,893 @@
+
+<!-- saved from url=(0109)http://intranet.daiict.ac.in/~daiict_nt01/Lecture/ANISH%20MATHURIA/IT215/Labs/Lab8-Shell/Shell-Assignment.mht -->
+<html xmlns:v="3D&quot;urn:schemas-microsoft-com:vml&quot;" xmlns:o="3D&quot;urn:schemas-microsoft-com:office:office&quot;" xmlns:w="3D&quot;urn:schemas-microsoft-com:office:word&quot;" xmlns="3D&quot;http://www.w3.org/TR/REC-html40&quot;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body lang="3DEN-US" link="3Dblue" vlink="3Dblue" style="3D&#39;tab-interval:.5in&#39;">MIME-Version: 1.0
+Content-Location: file:///C:/15182234/Shell-Assignment.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+
+
+
+<meta http-equiv="3DContent-Type" content="3D&quot;text/html;" charset="3Dus-ascii&quot;">
+<meta name="3DProgId" content="3DWord.Document">
+<meta name="3DGenerator" content="3D&quot;Microsoft" word="" 11"="">
+<meta name="3DOriginator" content="3D&quot;Microsoft" word="" 11"="">
+<link rel="3DFile-List" href="http://intranet.daiict.ac.in/~daiict_nt01/Lecture/ANISH%20MATHURIA/IT215/Labs/Lab8-Shell/3D%22Shell-Assignment_files/filelist.xml%22">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>200391003</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>200391003</o:LastAuthor>
+  <o:Revision>5</o:Revision>
+  <o:TotalTime>6</o:TotalTime>
+  <o:Created>2013-03-04T11:10:00Z</o:Created>
+  <o:LastSaved>2013-03-04T11:36:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1742</o:Words>
+  <o:Characters>9930</o:Characters>
+  <o:Company>DAIICT</o:Company>
+  <o:Lines>82</o:Lines>
+  <o:Paragraphs>23</o:Paragraphs>
+  <o:CharactersWithSpaces>11649</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>110</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" LatentStyleCount=3D"156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+code
+	{font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 41=
+2.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:224685843;
+	mso-list-template-ids:-275770388;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:350841244;
+	mso-list-template-ids:-1207152034;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:551618890;
+	mso-list-template-ids:-15143454;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:962462026;
+	mso-list-template-ids:1062912626;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:1185024577;
+	mso-list-template-ids:13288284;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:1436485007;
+	mso-list-template-ids:-81121210;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1"/>
+ </o:shapelayout></xml><![endif]-->
+
+
+
+
+<div class="3DSection1">
+
+<h1>Programming project #1:&nbsp; Unix Shell<span style="3D&#39;mso-spacerun:yes&#39;">&nbsp; </span>(Due date: to be advised)</h1>
+
+<h2>Introduction</h2>
+
+<p>The purpose of this assignment is to become more familiar with the conce=
+pts
+of process control and signaling.&nbsp; You’ll do this by writing a
+simple <span class="3DGramE">Unix</span> shell program that supports job
+control.&nbsp; </p>
+
+<h2>Hand Out Instructions</h2>
+
+<p>Copy the file <span class="3DSpellE"><code><span style="3D&#39;font-size:10.0pt=" '="">shlab-handout.tar</span></code></span>
+to the protected directory in which you plan to do your work.&nbsp; Then do=
+ the
+following: </p>
+
+<ul type="3Ddisc">
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l0="" level1="" lfo1;tab-stops:list="" .5in'="">Type the command <i>tar &lt;=
+span
+     class=3DSpellE&gt;xvf <span class="3DSpellE">shlab-handout.tar</span></i> to
+     expand the <span class="3DSpellE">tarfile</span>.&nbsp; </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l0="" level1="" lfo1;tab-stops:list="" .5in'=""><span class="3DGramE">Type =
+the
+     command <i>make</i></span> to compile and link some test routines.&amp;nbs=
+p; </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l0="" level1="" lfo1;tab-stops:list="" .5in'="">Type your name and ID in =
+the header
+     comment at the top of <span class="3DSpellE"><code><span style="3D&#39;font-s=" ize:="" 10.0pt'="">tsh.c</span></code></span>.&nbsp; </li>
+</ul>
+
+<p>Looking at the <span class="3DSpellE"><code><span style="3D&#39;font-size:10.0p=" t'="">tsh.c</span></code></span>
+(tiny shell) file, you will see that it contains a functional skeleton of a
+simple <span class="3DGramE">Unix</span> shell.&nbsp; To help you get started=
+, we
+have already implemented the less interesting functions.&nbsp; Your assignm=
+ent
+is to complete the remaining empty functions.&nbsp; As a sanity check for y=
+ou,
+we’ve listed the approximate number of lines of code for each of these
+functions in our reference solution (which includes lots of comments).&nbsp;=
+; </p>
+
+<ul type="3Ddisc">
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l5="" level1="" lfo2;tab-stops:list="" .5in'=""><span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">eval</span></code></span></span><code>:
+     Main routine that parses and interprets the command line.&nbsp; [80 li=
+nes]
+     </code></li><code>
+ </code><li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l5="" level1="" lfo2;tab-stops:list="" .5in'=""><code><span class="3DSpellE"><cod= e=""><span style="3D&#39;font-size:10.0pt&#39;">builtin_cmd</span></cod=></span></code>: Recognize=
+s and
+     interprets the built-in commands <code><span style="3D&#39;font-size:10.0pt=" '="">quit</span></code>,
+     <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-siz=" e:10.0pt'="">fg</span></code></span></span>,
+     <span class="3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">bg</span>&lt;=
+/code&gt;</code></span><code>,
+     and <code><span style="3D&#39;font-size:10.0pt&#39;">jobs</span></code>.&nbsp; [=
+30
+     lines] </code></li><code>
+ </code><li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l5="" level1="" lfo2;tab-stops:list="" .5in'=""><code><span class="3DSpellE"><cod= e=""><span style="3D&#39;font-size:10.0pt&#39;">do_bgfg</span></cod=></span></code>: Implements th=
+e <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0=" pt'="">bg</span></code></span></span>
+     and <span class="3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">fg</span></code></span>
+     built-in commands.&nbsp; [50 lines] </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l5="" level1="" lfo2;tab-stops:list="" .5in'=""><span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">waitfg</span></code></span></span><code>:
+     Waits for a foreground job to complete.&nbsp; [25 lines] </code></li><code>
+ </code><li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l5="" level1="" lfo2;tab-stops:list="" .5in'=""><code><span class="3DSpellE"><cod= e=""><span style="3D&#39;font-size:10.0pt&#39;">sigchld_handler</span></cod=></span></code>: Catch=
+es
+     SIGCHILD signals.&nbsp; [75 lines] </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l5="" level1="" lfo2;tab-stops:list="" .5in'=""><span class="3DSpellE"><cod= e=""><span style="3D&#39;font-size:10.0pt&#39;">sigint_handler</span></cod=></span>: Catches
+     SIGINT (<code><span style="3D&#39;font-size:10.0pt&#39;">ctrl-c</span></code>)
+     signals.&nbsp; [20 lines] </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l5="" level1="" lfo2;tab-stops:list="" .5in'=""><span class="3DSpellE"><cod= e=""><span style="3D&#39;font-size:10.0pt&#39;">sigtstp_handler</span></cod=></span>: Catch=
+es
+     SIGTSTP (<i>ctrl-z</i>) signals.&nbsp; [20 lines] </li>
+</ul>
+
+<p>Each time you modify your <span class="3DSpellE"><code><span style="3D&#39;font=" -size:="" 10.0pt'="">tsh.c</span></code></span> file, type <code><span style="3D&#39;font-siz=" e:="" 10.0pt'="">make</span></code> to recompile it.&nbsp; To run your shell, <span class="3DGramE">type <code><span style="3D&#39;font-size:10.0pt&#39;">./</span></code>&lt;=
+/span&gt;<span class="3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">tsh</span></code> to
+the command line: </span></span></p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">unix</span></span>&gt; ./<span class="3DS=" pelle="">tsh</span></pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&amp;nb=
+sp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; <code>[type comman=
+ds to your shell here]</code></pre>
+
+<p class="3DMsoNormal">If you want to exit your shell, but have not implement=
+ed the
+appropriate commands, you can type <code><span style="3D&#39;font-size:10.0pt&#39;">c=
+trl-D</span></code>
+to kill your shell.&nbsp; </p>
+
+<h2>General Overview of <span class="3DGramE">Unix</span> Shells</h2>
+
+<p>A <i>shell</i> is an interactive command-line interpreter that runs prog=
+rams
+on behalf of the user.&nbsp; A shell repeatedly prints a prompt, waits for =
+a <i>command
+line</i> on <span class="3DSpellE"><i>stdin</i></span>, and then carries out =
+some
+action, as directed by the contents of the command line.&nbsp; </p>
+
+<p>The command line is a sequence of ASCII text words delimited by <span class="3DSpellE">whitespace</span>.&nbsp; The first word in the command line =
+is
+either the name of a built-in command or the pathname of an executable
+file.&nbsp; The remaining words are command-line arguments.&nbsp; If the fi=
+rst
+word is a built-in command, the shell immediately executes the command in t=
+he
+current process.&nbsp; Otherwise, the word is assumed to be the pathname of=
+ an
+executable program.&nbsp; In this case, the shell forks a child process, th=
+en
+loads and runs the program in the context of the child.&nbsp; The child
+processes created as a result of interpreting a single command line are kno=
+wn
+collectively as a <i>job</i>.&nbsp; In general, a job can consist of multip=
+le
+child processes connected by <span class="3DGramE">Unix</span> pipes.&nbsp; &lt;=
+/p&gt;
+
+</p><p>If the command line ends with an ampersand &amp;, then the job runs in t=
+he <i>background</i>,
+which means that the shell does not wait for the job to terminate before
+printing the prompt and awaiting the next command line.&nbsp; Otherwise, the
+job runs in the <i>foreground</i>, which means that the shell waits for the=
+ job
+to terminate before prompting for the next command line.&nbsp; Thus, at any
+point in time, at most one job can be running in the foreground.&nbsp; Howe=
+ver,
+an arbitrary number of jobs can run in the background.&nbsp; </p>
+
+<p>For example, typing the command line </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; <code>jobs</code>&lt;=
+/pre&gt;
+
+<p class="3DMsoNormal"><span class="3DGramE">causes</span> the shell to execute=
+ the
+built-in <code><span style="3D&#39;font-size:10.0pt&#39;">jobs</span></code> command.=
+&nbsp;
+Typing the command line </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; <code>/bin/<span class="3DSpellE">ls</span> -l -d</code></pre>
+
+<p class="3DMsoNormal"><span class="3DGramE">runs</span> the <span class="3DSpel=" le=""><code><span style="3D&#39;font-size:10.0pt&#39;">ls</span></code></span> program in the
+foreground.&nbsp; By convention, the shell ensures that when <span class="3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">ls</span></code> <span class="3DGramE">begins</span> executing its main routine: </span></p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">int</span></span> main(<span class="3DSpe=" lle="">int</span> <span class="3DSpellE">argc</span>, char *<span class="3DSpellE">argv</span>[])</pre>
+
+<p class="3DMsoNormal"><span class="3DGramE">the</span> <span class="3DSpellE"><c= ode=""><span style="3D&#39;font-size:10.0pt&#39;">argc</span></c=></span> and <span class="3DSpel=" le=""><code><span style="3D&#39;font-size:10.0pt&#39;">argv</span></code></span> arguments have the fol=
+lowing
+values: </p>
+
+<ul type="3Ddisc">
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l2="" level1="" lfo3;tab-stops:list="" .5in'=""><span class="3DSpellE"><cod= e=""><span style="3D&#39;font-size:10.0pt&#39;">argc</span></cod=></span><code><span style="3D&#39;font-size:10.0pt&#39;"> =3D=3D 3</span></code> </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l2="" level1="" lfo3;tab-stops:list="" .5in'=""><span class="3DSpellE"><cod= e=""><span style="3D&#39;font-size:10.0pt&#39;">argv</span></cod=></span><code><span style="3D&#39;font-size:10.0pt&#39;">[0] =3D=3D "/bin/<span class="3DSpellE">=
+ls</span>"</span></code>
+     </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l2="" level1="" lfo3;tab-stops:list="" .5in'=""><span class="3DSpellE"><cod= e=""><span style="3D&#39;font-size:10.0pt&#39;">argv</span></cod=></span><code><span style="3D&#39;font-size:10.0pt&#39;">[1] =3D=3D "-l"</span></code> 
+ </li><li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l2="" level1="" lfo3;tab-stops:list="" .5in'=""><span class="3DSpellE"><cod= e=""><span style="3D&#39;font-size:10.0pt&#39;">argv</span></cod=></span><code><span style="3D&#39;font-size:10.0pt&#39;">[2] =3D=3D "-d"</span></code> 
+</li></ul>
+
+<p class="3DMsoNormal">Alternatively, typing the command line </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; <code>/bin/<span class="3DSpellE">ls</span> -l -d &amp;</code></pre>
+
+<p class="3DMsoNormal"><span class="3DGramE">runs</span> the <span class="3DSpel=" le=""><code><span style="3D&#39;font-size:10.0pt&#39;">ls</span></code></span> program in the
+background.&nbsp; </p>
+
+<p><span class="3DGramE">Unix</span> shells support the notion of <i>job cont=
+rol</i>,
+which allows users to move jobs back and forth between background and
+foreground, and to change the process state (running, stopped, or terminate=
+d)
+of the processes in a job.&nbsp; Typing <i>ctrl-c</i> causes a SIGINT signa=
+l to
+be delivered to each process in the foreground job.&nbsp; The default action
+for SIGINT is to terminate the process.&nbsp; Similarly, typing <i>ctrl-z<!--=
+i-->
+causes a SIGTSTP signal to be delivered to each process in the foreground
+job.&nbsp; The default action for SIGTSTP is to place a process in the stop=
+ped
+state, where it remains until it is awakened by the receipt of a SIGCONT
+signal.&nbsp; <span class="3DGramE">Unix</span> shells also provide various
+built-in commands that support job control.&nbsp; For example: </i></p><i>
+
+<ul type="3Ddisc">
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l4="" level1="" lfo4;tab-stops:list="" .5in'=""><span class="3DGramE"><code=><span style="3D&#39;font-size:10.0pt&#39;">jobs</span></code=></span>: List the running=
+ and
+     stopped background jobs.&nbsp; </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l4="" level1="" lfo4;tab-stops:list="" .5in'=""><span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">bg</span></code>&lt;=
+/span&gt;</span><code><span style="3D&#39;font-size:10.0pt&#39;"> &lt;job&gt;</span></code>: Change a stopped
+     background job to a running background job.&nbsp; </span></li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l4="" level1="" lfo4;tab-stops:list="" .5in'=""><span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">fg</span></code>&lt;=
+/span&gt;</span><code><span style="3D&#39;font-size:10.0pt&#39;"> &lt;job&gt;</span></code>: Change a stoppe=
+d or
+     running background job to a running foreground job.&nbsp; </span></li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l4="" level1="" lfo4;tab-stops:list="" .5in'=""><span class="3DGramE"><code=><span style="3D&#39;font-size:10.0pt&#39;">kill</span></code=></span><code><span style="3D&#39;font-size:10.0pt&#39;"> &lt;job&gt;</span></code>: Terminate a
+     job.&nbsp; </li>
+</ul>
+
+<h2>The <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-=" size:10.0pt'="">tsh</span></code></span></span>
+Specification</h2>
+
+<p>Your <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-=" size:10.0pt'="">tsh</span></code></span></span>
+shell should have the following features: </p>
+
+<ul type="3Ddisc">
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l1="" level1="" lfo5;tab-stops:list="" .5in'="">The prompt should be the
+     string “<span class="3DSpellE"><code><span style="3D&#39;font-size:10.0=" pt'="">tsh</span></code></span><span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">&gt; </span>”</code></span><code>.
+     </code></li><code>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l1="" level1="" lfo5;tab-stops:list="" .5in'="">The command line typed by=
+ the
+     user should consist of a <i>name</i> and zero or more arguments, all
+     separated by one or more spaces.&nbsp; If <i>name</i> is a built-in
+     command, then <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">tsh</span></code></span></span> should hand=
+le it
+     immediately and wait for the next command line.&nbsp; Otherwise, <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0=" pt'="">tsh</span></code></span></span>
+     should assume that <i>name</i> is the path of an executable file, whic=
+h it
+     loads and runs in the context of an initial child process (In this
+     context, the term <i>job</i> refers to this initial child process).&amp;nb=
+sp; </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l1="" level1="" lfo5;tab-stops:list="" .5in'=""><span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">tsh</span></code>=
+</span></span>
+     need not support pipes (<code><span style="3D&#39;font-size:10.0pt&#39;">|</span></code>)
+     or I/O redirection (<code><span style="3D&#39;font-size:10.0pt&#39;">&lt;</span>=
+</code>
+     and <code><span style="3D&#39;font-size:10.0pt&#39;">&gt;</span></code>).</li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l1="" level1="" lfo5;tab-stops:list="" .5in'="">Typing <i>ctrl-c</i> (<i>=
+ctrl-z</i>)
+     should cause a SIGINT (SIGTSTP) signal to be sent to the current
+     foreground job, as well as any descendents of that job (e.g., any child
+     processes that it forked).&nbsp; If there is no foreground job, then t=
+he
+     signal should have no effect.&nbsp; </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l1="" level1="" lfo5;tab-stops:list="" .5in'="">If the command line ends =
+with
+     an ampersand, then <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">tsh</span></code></span></span> should run =
+the
+     job in the background.&nbsp; Otherwise, it should run the job in the
+     foreground.&nbsp; </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l1="" level1="" lfo5;tab-stops:list="" .5in'="">Each job can be identifie=
+d by
+     either a process ID (PID) or a job ID (JID), which is a small positive
+     integer assigned by <span class="3DSpellE"><span class="3DGramE"><code><sp= an="" style="3D&#39;font-size:10.0pt&#39;">tsh</sp=></code></span></span>.&nbsp; <span class="3DSpellE">JIDs</span> should be denoted on the command line by the
+     prefix “%”.&nbsp; For example, <span class="3DGramE">“=
+ <i>%</i></span><i>5</i>”
+     denotes JID 5, and “<i>5</i>” denotes PID 5.&nbsp; (We have
+     provided you with all of the routines you need for manipulating the job
+     list.)&nbsp; </li>
+ </code><li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l1="" level1="" lfo5;tab-stops:list="" .5in'=""><code><span class="3DSpellE"><cod= e=""><span style="3D&#39;font-size:10.0pt&#39;">tsh</span></cod=></span></code> should support the
+     following built-in commands: </li>
+ <ul type="3Dcircle">
+  <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-=" alt:="" auto;mso-list:l1="" level2="" lfo5;tab-stops:list="" 1.0in'="">The <code><span style="3D&#39;font-size:10.0pt&#39;">quit</span></code> command terminates the
+      shell.&nbsp; </li>
+  <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-=" alt:="" auto;mso-list:l1="" level2="" lfo5;tab-stops:list="" 1.0in'="">The <code><span style="3D&#39;font-size:10.0pt&#39;">jobs</span></code> command lists all backg=
+round
+      jobs.&nbsp; </li>
+  <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-=" alt:="" auto;mso-list:l1="" level2="" lfo5;tab-stops:list="" 1.0in'="">The <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.=" 0pt'="">bg</span></code></span></span><code><span style="3D&#39;font-size:10.0pt&#39;"> &lt;job&gt;</span></code> command restart=
+s <code><span style="3D&#39;font-size:10.0pt&#39;">&lt;job&gt;</span></code> by sending it a
+      SIGCONT signal, and then runs it in the background.&nbsp; The <code>&lt;=
+span
+      style=3D'font-size:10.0pt'&gt;&lt;job&gt;</code> argument can be =
+either
+      a PID or a JID.&nbsp; </li>
+  <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-=" alt:="" auto;mso-list:l1="" level2="" lfo5;tab-stops:list="" 1.0in'="">The <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.=" 0pt'="">fg</span></code></span></span><code><span style="3D&#39;font-size:10.0pt&#39;"> &lt;job&gt;</span></code> command restart=
+s <code><span style="3D&#39;font-size:10.0pt&#39;">&lt;job&gt;</span></code> by sending it a
+      SIGCONT signal, and then runs it in the foreground.&nbsp; </li>
+ </ul>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l1="" level1="" lfo5;tab-stops:list="" .5in'=""><span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">tsh</span></code>=
+</span></span>
+     should reap all of its zombie children.&nbsp; If any job terminates
+     because it receives a signal that it didn’t catch, then <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-size:10.0=" pt'="">tsh</span></code></span></span>
+     should recognize this event and print a message with the job’s P=
+ID
+     and a description of the offending signal.&nbsp; </li>
+</ul>
+
+<h2>Checking Your Work</h2>
+
+<p>We have provided some tools to help you check your work.&nbsp; </p>
+
+<p><span class="3DGramE"><b>Reference solution.</b></span> The Linux executab=
+le <span class="3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">tshref</span></code>&lt;=
+/span&gt;
+is the reference solution for the shell.&nbsp; Run this program to resolve =
+any
+questions you have about how your shell should behave.&nbsp; <i>Your shell
+should emit output that is identical to the reference solution</i> (modulo =
+<span class="3DSpellE">PIDs</span>, of course, which change from run to run).&nbsp;=
+ </span></p>
+
+<p><b>Shell driver.</b> The <code><span style="3D&#39;font-size:10.0pt&#39;">sdriver.=
+pl</span></code>
+program executes a shell as a child process, sends it commands and signals =
+as
+directed by a <i>trace file</i>, and captures and displays the output from =
+the
+shell.&nbsp; </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">unix</span></span>&gt; ./sdriver.pl -h<!--=
+pre--><pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span>Usage: =
+sdriver.pl [-<span class="3DSpellE">hv</span>] -t &lt;trace&gt; -s &lt;<span class="3DSpellE">shel=
+lprog</span>&gt; -a &lt;<span class="3DSpellE">args</span>&gt;</pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&amp;=
+nbsp;&nbsp;&nbsp; </span>Options:</pre><pre><span style="3D&#39;mso-spacerun:yes=" '="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-h<span style="3D&#39;mso-spacerun:yes&#39;">=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>P=
+rint this message</pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&amp;n=
+bsp;&nbsp;&nbsp; </span>-v<span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&amp;nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="3DGramE">Be</span> more verbose</pre><pre><span style="3D&#39;mso-spacerun:=" yes'="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-t &lt;trace&gt;<span style="3D&#39;m=" so-spacerun:yes'="">&nbsp;&nbsp;&nbsp; </span>Trace file</pre><pre><span style="=3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-s &lt;shell&gt;=
+;<span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span>Shell program t=
+o test</pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp; </span><span= style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp;-a &lt;<span class="3DSpellE">args</span>&gt;<span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;=
+&nbsp;&nbsp; </span>Shell arguments</span=></pre><pre><span style="3D&#39;mso-spacerun:y=" es'="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>-g<span style="3D&#39;mso-spacerun:yes=" '="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Generate output for <span class="3DSpellE">autograder</span></span></pre>
+
+<p>We have also provided 16 trace files (<span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">trace{</span></code></span><code><span style="3D&#39;font-size:10.0pt&#39;">01-16}.txt</span></code>) that you will use in
+conjunction with the shell driver to test the correctness of your shell.&amp;nb=
+sp;
+The lower-numbered trace files do very simple tests, and the higher-numbered
+tests do more complicated tests.&nbsp; </p>
+
+<p>You can run the shell driver on your shell using trace file <code><span style="3D&#39;font-size:10.0pt&#39;">trace01.txt</span></code> (for instance) by typi=
+ng: </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">unix</span></span>&gt; <code>./sdriver.p=
+l -t trace01.txt -s ./<span class="3DSpellE">tsh</span> -a "-p"</code></pre>
+
+<p class="3DMsoNormal"><span class="3DGramE">or</span> </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">unix</span></span>&gt; <code>make test01=
+</code></pre>
+
+<p class="3DMsoNormal">(The <i>-a “-p”</i> argument tells your sh=
+ell
+not to emit a prompt.)&nbsp; And, if you want to run all of the tests on yo=
+ur
+shell, you can type: </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">unix</span></span>&gt; <code>make tests&lt;=
+/code&gt;</code></pre><code>
+
+<p class="3DMsoNormal">Similarly, you can run the trace driver on the referen=
+ce
+shell by typing: </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">unix</span></span>&gt; <code>./sdriver.p=
+l -t trace01.txt -s ./<span class="3DSpellE">tshref</span> -a "-p"</code></pre>
+
+<p class="3DMsoNormal"><span class="3DGramE">or</span> </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">unix</span></span>&gt; <code>make rtest0=
+1</code></pre>
+
+<p class="3DMsoNormal">And you can run all the tests on the reference shell by
+typing </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">unix</span></span>&gt; <code>make <span class="3DSpellE">rtests</span></code></pre>
+
+<p class="3DMsoNormal">For your reference, <span class="3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">tshref.out</span></code></span> gives the output=
+ of
+the reference solution on all 16 traces.&nbsp; This might be more convenient
+for you than running the shell driver.&nbsp; </p>
+
+<p>The neat thing about the trace files is that they generate the same outp=
+ut
+you would have gotten had you run your shell interactively (except for an
+initial comment that identifies the trace).&nbsp; For example: </p>
+
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">unix</span></span>&gt; make test15</pre>=
+<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span>./sdriver.p=
+l -t trace15.txt -<span class="3DGramE">s ./</span><span class="3DSpellE">tsh</span> -a "-p"&lt;=
+/pre&gt;<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span>#<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span># trace15.=
+txt - Putting it all together</pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&amp;n=
+bsp;&nbsp;&nbsp; </span>#</pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;=
+&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; ./bogus</pre><pre>=
+<span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DGramE">./</span>bogus: Command not found.</pre><pre><span style="3D&#39;m=" so-spacerun:yes'="">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; ./<span class="3DSp=" elle="">myspin</span> 10</pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&amp;nbs=
+p;&nbsp; </span>Job (9721) terminated by signal: Interrupt</pre><pre><span =="" style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; ./<span class="3DSp=" elle="">myspin</span> 3 &amp;</pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;=
+;&nbsp;&nbsp; </span>[1] (9723<span class="3DGramE">) .</span>/<span class="3DSpellE">myspin</span> 3 &amp;</pre><p= re=""><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; ./<span class="3DSp=" elle="">myspin</span> 4 &amp;</p=></pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;=
+;&nbsp;&nbsp; </span>[2] (9725<span class="3DGramE">) .</span>/<span class="3DSpellE">myspin</span> 4 &amp;</pre><p= re=""><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; jobs</p=></pre><pre><sp= an="" style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; [1] (9723) Running&lt;=
+span style=3D'mso-spacerun:yes'&gt;&nbsp;&nbsp;&nbsp; <span class="3DGramE">./</span><span class="3DSpellE">myspin</span> 3 &amp;</sp=></pre><pre=><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span>[2] (9725) Runn=
+ing<span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DGramE">./</span><span class="3DSpellE">myspin</span> 4 &amp;</pre=></code></pre><code><pre=><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; <span class="3DSpel=" le="">fg</span> %1</pre=></code></i></pre><pre><i><code><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&amp;nbs=
+p; </span>Job [1] (9723) stopped by signal: Stopped</code></i></pre><pre><i><code><span style="=3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; jobs</code></i></pre><pre><i><code><sp= an="" style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; [1] (9723) Stopped&lt;=
+span style=3D'mso-spacerun:yes'&gt;&nbsp;&nbsp;&nbsp; <span class="3DGramE">./</span><span class="3DSpellE">myspin</span> 3 &amp;</sp=></code></i></pre><i><code><pre=><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span>[2] (9725) Runn=
+ing<span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DGramE">./</span><span class="3DSpellE">myspin</span> 4 &amp;<pre=><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; <span class="3DSpel=" le="">bg</span> %3<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&amp;nbs=
+p; </span>%3: No such job</pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;=
+&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; <span class="3DSpel=" le="">bg</span> %1</pre><pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&amp;nbs=
+p; </span>[1] (9723<span class="3DGramE">) .</span>/<span class="3DSpellE">myspin</span> 3 &amp;</pre><p= re=""><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; jobs<pre><sp= an="" style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; [1] (9723) Running&lt;=
+span style=3D'mso-spacerun:yes'&gt;&nbsp;&nbsp;&nbsp; <span class="3DGramE">./</span><span class="3DSpellE">myspin</span> 3 &amp;</sp=></pre><pre=><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span>[2] (9725) Runn=
+ing<span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp; </span><span style="3D&#39;mso-=" spacerun:yes'="">&nbsp;</span><span class="3DGramE">./</span><span class="3DSpellE">myspin</span> 4 &amp;<pre=><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; <span class="3DSpel=" le="">fg</span> %1<pre><span style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&amp;nbs=
+p; </span><span class="3DSpellE"><span class="3DGramE">tsh</span></span>&gt; quit</pre><pre><sp= an="" style="3D&#39;mso-spacerun:yes&#39;">&nbsp;&nbsp;&nbsp; <span class="3DSpellE"><span class="3DGramE">unix</span></span>&gt;</sp=></pre>
+
+<h2>Hints</h2>
+
+<ul type="3Ddisc">
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l3="" level1="" lfo6;tab-stops:list="" .5in'="">Read every word of Chapte=
+r 8
+     (Exceptional Control Flow) in the textbook.&nbsp; </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l3="" level1="" lfo6;tab-stops:list="" .5in'="">Use the trace files to gu=
+ide
+     the development of your shell.&nbsp; Starting with <code><span style="3D&#39;font-size:10.0pt&#39;">trace01.txt</span></code>, make sure that y=
+our
+     shell produces the <i>identical</i> output as the reference shell.&amp;nbs=
+p;
+     Then move on to trace file <code><span style="3D&#39;font-size:10.0pt&#39;">trac=
+e02.txt</span></code>,
+     and so on.&nbsp; </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l3="" level1="" lfo6;tab-stops:list="" .5in'="">The <span class="3DSpellE">=
+<code><span style="3D&#39;font-size:10.0pt&#39;">psignal</span></code></span>, <span class="=3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">waitpid</span></code></span>, <code><span style="3D&#39;font-size:10.0pt&#39;">kill</span></code>, <code><span style="3D&#39;fo=" nt-size:="" 10.0pt'="">fork</span></code>, <span class="3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">execve</span></code></span>, <span class="3D=" spelle=""><code><span style="3D&#39;font-size:10.0pt&#39;">setpgid</span></code></span>, and <span class="3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">sigprocmask</span></code></span>
+     functions will come in very handy.&nbsp; The WUNTRACED and WNOHANG opt=
+ions
+     to <span class="3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">waitpid=
+</span></code></span>
+     will also be useful.&nbsp; </li>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l3="" level1="" lfo6;tab-stops:list="" .5in'="">Programs such as <code><s= pan="" style="3D&#39;font-size:10.0pt&#39;">more</s=></code>, <code><span style="3D&#39;fo=" nt-size:="" 10.0pt'="">less</span></code>, <span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">vi</span></code></span>, and <span class="3D=" spelle=""><code><span style="3D&#39;font-size:10.0pt&#39;">emacs</span></code></span> do strange thing=
+s with
+     the terminal settings.&nbsp; Don’t run these programs from your
+     shell.&nbsp; Stick with simple text-based programs such <code><span style="3D&#39;font-size:10.0pt&#39;">/bin/<span class="3DSpellE">ls</span></span>&lt;=
+/code&gt;, <code><span style="3D&#39;font-size:10.0pt&#39;">/bin/<span class="3DSpellE">ps</span></span>&lt;=
+/code&gt;,
+     and <code><span style="3D&#39;font-size:10.0pt&#39;">/bin/echo</span></code>.&amp;nb=
+sp; If
+     you run one of these by accident, you <i>may</i> be able to get back to
+     normal by typing <span class="3DSpellE"><code><span style="3D&#39;font-size:1=" 0.0pt'="">stty</span></code></span><code><span style="3D&#39;font-size:10.0pt&#39;"> reset</span></code>.&nbsp; In the worst ca=
+se,
+     you may need to terminate your terminal session.&nbsp; </code></code></li><code><code>
+ <li class="3DMsoNormal" style="3D&#39;mso-margin-top-alt:auto;mso-margin-bottom-a=" lt:auto;="" mso-list:l3="" level1="" lfo6;tab-stops:list="" .5in'="">When you run your shell f=
+rom
+     the standard <span class="3DGramE">Unix</span> shell, your shell is runn=
+ing in
+     the foreground process group.&nbsp; If your shell then creates a child
+     process, by default that child will also be a member of the foreground
+     process group.&nbsp; Since typing <i>ctrl-c</i> sends a SIGINT to every
+     process in the foreground group, typing <i>ctrl-c</i> will send a SIGI=
+NT
+     to your shell, as well as to every process that your shell created, wh=
+ich
+     obviously isn’t correct.&nbsp; </li>
+</code></code></ul><code><code>
+
+<p style="3D&#39;margin-left:.5in&#39;">Here is the workaround: After the <code><span style="3D&#39;font-size:10.0pt&#39;">fork</span></code>, but before the <span class="=3DSpellE"><code><span style="3D&#39;font-size:10.0pt&#39;">execve</span></code></span>, the child process s=
+hould
+call <span class="3DSpellE"><span class="3DGramE"><code><span style="3D&#39;font-siz=" e:10.0pt'="">setpgid</span></code></span></span><span class="3DGramE"><code><span style="3D&#39;font-size:10.0pt&#39;">(</span></code></span>=
+<code><span style="3D&#39;font-size:10.0pt&#39;">0, 0)</span></code>, which puts the child in a n=
+ew
+process group whose group ID is identical to the child’s PID.&nbsp; T=
+his
+ensures that there will be only one process, your shell, in the foreground
+process group.&nbsp; When you type <i>ctrl-c</i>, the shell should catch the
+resulting SIGINT and then forward it to the appropriate foreground job (or =
+more
+precisely, the process group that contains the foreground job).&nbsp; </p>
+
+<h2>Evaluation</h2>
+
+<p class="3DMsoNormal">To be posted. </p>
+
+<h2>Turn In Instructions</h2>
+
+<h2><span style="3D&#39;font-size:12.0pt;font-weight:normal;mso-bidi-font-weight=" :bold'="">To
+be posted.<o:p></o:p></span></h2>
+
+<h2>DUE DATE:</h2>
+
+<p>To be posted.<span style="3D&#39;mso-spacerun:yes&#39;">&nbsp; </span></p>
+
+</code></code></pre=></pre=></p=></pre=></pre=></code></i></div><i><code><code>
+
+
+
+
+</code></code></i></body></html>
